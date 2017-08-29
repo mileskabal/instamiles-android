@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mileskabal.instamiles"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET" ></uses-permission>
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" android:logo="@drawable/icon">
+        <activity
+            android:name=".InstamilesLoader"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".ListingCat"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="com.mileskabal.instamiles.LISTINGCAT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".ListingLink"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="com.mileskabal.instamiles.LISTINGLINK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".EditLink"
+            android:label="@string/edition"
+            >
+            <intent-filter>
+                <action android:name="com.mileskabal.instamiles.EDITLINK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ShareView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ShareView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CHOOSER" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>

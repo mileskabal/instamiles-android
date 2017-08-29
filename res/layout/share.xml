@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titre"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <TextView
+	    style="?android:attr/listSeparatorTextViewStyle"
+	    android:paddingTop="5dip"
+	    android:gravity="center_horizontal"
+	    android:layout_width="match_parent"
+	    android:background="#FF999999"
+	    android:layout_height="1dp" 
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+    />
+    
+    <EditText
+        android:inputType="text"
+        android:id="@+id/etTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+        android:ems="10" 
+        >
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lien"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <TextView
+	    style="?android:attr/listSeparatorTextViewStyle"
+	    android:paddingTop="5dip"
+	    android:gravity="center_horizontal"
+	    android:layout_width="match_parent"
+	    android:background="#FF999999"
+	    android:layout_height="1dp" 
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+    />
+    
+    <EditText
+        android:inputType="text"
+        android:id="@+id/etLien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp" 
+        >
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/categories"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+     />
+    <TextView
+	    style="?android:attr/listSeparatorTextViewStyle"
+	    android:paddingTop="5dip"
+	    android:gravity="center_horizontal"
+	    android:layout_width="match_parent"
+	    android:background="#FF999999"
+	    android:layout_height="1dp" 
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+    />
+    
+    
+    <Spinner
+        android:id="@+id/spinnerCat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+         />
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/commentaires"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <TextView
+	    style="?android:attr/listSeparatorTextViewStyle"
+	    android:paddingTop="5dip"
+	    android:gravity="center_horizontal"
+	    android:layout_width="match_parent"
+	    android:background="#FF999999"
+	    android:layout_height="1dp"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp" 
+    />
+    
+    
+    <EditText
+        android:id="@+id/etComm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+         />
+
+    <Button
+        android:id="@+id/btValider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valider"
+        android:onClick="onButtonValiderClicked"
+        android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+         />
+
+</LinearLayout>

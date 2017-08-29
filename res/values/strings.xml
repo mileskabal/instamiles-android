@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Instamiles</string>
+    <string name="titre">Titre</string>
+    <string name="lien">Lien</string>
+	<string name="categories">Categories</string>
+	<string name="commentaires">Commentaires</string>
+	<string name="valider">Valider</string>
+	<string name="edition">Edition</string>
+</resources>

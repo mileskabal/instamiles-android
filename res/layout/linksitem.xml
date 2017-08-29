@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+ 
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:layout_width="0dip"
+	    android:layout_height="wrap_content"
+	   	android:layout_gravity="center_vertical"
+	   	android:paddingLeft="16dp"
+	   	android:paddingRight="16dp"
+	   	android:paddingTop="8dp"
+	   	android:paddingBottom="8dp"
+	    android:layout_weight="1"
+	    >
+ 
+	    <TextView android:id="@+id/tvLinksTitre"
+	         android:layout_width="fill_parent"
+	         android:layout_height="fill_parent"
+	         android:textSize="15dp"
+	         android:textStyle="bold"
+	         android:textColor="@android:color/white"
+	         />
+ 
+	    <TextView android:id="@+id/tvLinksDescription"
+	         android:layout_width="fill_parent"
+	         android:layout_height="fill_parent"
+	         android:textSize="10dp"
+	         />
+ 
+    </LinearLayout>
+ 
+</LinearLayout>
